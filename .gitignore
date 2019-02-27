@@ -1,6 +1,6 @@
 build/
 dist/
-TemplatePythonPackage.egg-info/
+sample_py.egg-info/
 *.pyc
 *.pyo
 *.swp

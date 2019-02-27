@@ -78,11 +78,18 @@ class BuildBindingsCommand( BaseBuildExtCommand ) :
 
 ## class InstallCommand( BaseInstallCommand ) :
 ##     
+##     def run( self ) :
+##         ## self.reinitialize_command( 'build_ext' )
+##         ## self.run_command( 'build_ext' )
+##         print( 'InstallCommand:' )
+##         print( dir(self) )
+##         print( 'path: ', self.install_lib )
+##         # BaseInstallCommand.run( self )
 
 print( 'packages: ', find_packages() )
 
 setup(
-    name                    = 'TemplatePythonPackage',
+    name                    = 'sample_py',
     version                 = '0.0.1',
     license                 = 'MIT',
     description             = 'Template package for various projects',
@@ -103,7 +110,7 @@ setup(
                                 CMakeExtension( 'pysample', '.', 'res' )
                               ],
     cmdclass                = { 
-                                'build_ext': BuildBindingsCommand 
+                                'build_ext': BuildBindingsCommand
                               },
     zip_safe                = False
 )

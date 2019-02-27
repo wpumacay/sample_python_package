@@ -45,8 +45,9 @@ namespace bindings {
 
 }}
 
-PYBIND11_MODULE( pysample, m )
+PYBIND11_MODULE( sample_cpp_wrapper, m )
 {
+
     m.def( "GetContentFromXML", &sampleCpp::bindings::GetContentFromXML );
     m.def( "GetContentFromJSON", &sampleCpp::bindings::GetContentFromJSON );
     m.def( "GetSampleContentXML", &sampleCpp::bindings::GetSampleContentXML );
