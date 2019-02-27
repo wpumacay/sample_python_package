@@ -17,21 +17,6 @@ def buildSampleBindings( sourceDir, buildDir, cmakeArgs, buildArgs, env ):
     if not os.path.exists( buildDir ) :
         os.makedirs( buildDir )
 
-    print( 'cmakeArgs: ' )
-    print( cmakeArgs )
-
-    print( 'buildArgs: ' )
-    print( buildArgs )
-
-    print( 'sourceDir: ' )
-    print( sourceDir )
-
-    print( 'buildDir: ' )
-    print( buildDir )
-
-    print( 'env: ' )
-    print( env )
-
     subprocess.call( ['cmake', sourceDir] + cmakeArgs, cwd=buildDir, env=env )
     subprocess.call( ['cmake', '--build', '.'] + buildArgs, cwd=buildDir )
 
@@ -75,18 +60,6 @@ class BuildBindingsCommand( BaseBuildExtCommand ) :
         buildSampleBindings( _sourceDir, _buildDir, 
                              _cmakeArgs, _buildArgs, 
                              _env )
-
-## class InstallCommand( BaseInstallCommand ) :
-##     
-##     def run( self ) :
-##         ## self.reinitialize_command( 'build_ext' )
-##         ## self.run_command( 'build_ext' )
-##         print( 'InstallCommand:' )
-##         print( dir(self) )
-##         print( 'path: ', self.install_lib )
-##         # BaseInstallCommand.run( self )
-
-print( 'packages: ', find_packages() )
 
 setup(
     name                    = 'sample_py',

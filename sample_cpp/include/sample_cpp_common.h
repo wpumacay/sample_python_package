@@ -12,10 +12,5 @@ namespace sampleCpp
 
     std::string getXMLContents( const std::string& xmlfile );
     std::string getJSONContents( const std::string& jsonfile );
-    std::string getResourcesPath();
-    std::string getXMLResourcesPath();
-    std::string getJSONResourcesPath();
-    std::string getImageResourcesPath();
-    std::string getLibrariesPath();
-    
+
 }

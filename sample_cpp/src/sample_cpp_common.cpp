@@ -42,47 +42,4 @@ namespace sampleCpp
         return _strXML;
     }
 
-    std::string getResourcesPath()
-    {
-        std::string _resStr;
-        _resStr += SAMPLE_CPP_RESOURCES_PATH;
-        
-        return _resStr;
-    }
-
-    std::string getXMLResourcesPath()
-    {
-        std::string _resStr;
-        _resStr += SAMPLE_CPP_RESOURCES_PATH;
-        _resStr += "xml/";
-        
-        return _resStr;
-    }
-
-    std::string getJSONResourcesPath()
-    {
-        std::string _resStr;
-        _resStr += SAMPLE_CPP_RESOURCES_PATH;
-        _resStr += "json/";
-        
-        return _resStr;
-    }
-
-    std::string getImageResourcesPath()
-    {
-        std::string _resStr;
-        _resStr += SAMPLE_CPP_RESOURCES_PATH;
-        _resStr += "imgs/";
-        
-        return _resStr;
-    }
-
-    std::string getLibrariesPath()
-    {
-        std::string _resStr;
-        _resStr += SAMPLE_CPP_LIBS_PATH;
-        
-        return _resStr;
-    }
-
 }

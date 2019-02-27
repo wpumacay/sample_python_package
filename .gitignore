@@ -1,6 +1,7 @@
 build/
 dist/
 sample_py.egg-info/
+__pycache__/
 *.pyc
 *.pyo
 *.swp
